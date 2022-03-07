@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import dividerIconDesktop from './images/pattern-divider-desktop.svg';
+import dividerIconMobile from './images/pattern-divider-mobile.svg';
 
 export const Card = styled.div`
   background-color: hsl(217, 19%, 24%);
@@ -14,6 +16,11 @@ export const Card = styled.div`
   min-height: 25vh;
   width: clamp(5rem, 40vw, 24rem);
   position: relative;
+
+  @media screen and (max-width: 600px)
+  { 
+    width: clamp(5rem, 80vw, 15rem);
+  }
 
   img {
     max-width: 100%;
@@ -31,22 +38,24 @@ export const AdviceTitle = styled.h1`
 
 export const AdviceText = styled.p`
   color: hsl(193, 38%, 86%);
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 6.5vw, 2rem);
   margin: 0 1rem;
 `;
 
-// export const Loading = styled.div`
-//   color: hsl(193, 38%, 86%);
-//   font-size: 2rem;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   height: 100%;
-// `;
+
+export const Divider = styled.div`
+  background-image: url(${dividerIconDesktop});
+  background-size: cover;
+  background-position: center;
+  height: 15px;
+  width: 100%;
+  
+  @media screen and (max-width: 600px) {
+    background-image: url(${dividerIconMobile});
+  }
+`
 
 export const Dice = styled.button`
-  /* transform: translateY(1.75rem); */
   position: absolute;
   bottom: -6.5%;
   background-color: hsl(150, 100%, 66%);
