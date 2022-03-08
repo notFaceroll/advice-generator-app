@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import dividerIconDesktop from './images/pattern-divider-desktop.svg';
-import dividerIconMobile from './images/pattern-divider-mobile.svg';
+import dividerIconDesktop from './Assets/pattern-divider-desktop.svg';
+import dividerIconMobile from './Assets/pattern-divider-mobile.svg';
 
-export const Card = styled.div`
+export const Card = styled.main`
   background-color: hsl(217, 19%, 24%);
   display: flex;
   flex-direction: column;

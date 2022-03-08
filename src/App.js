@@ -1,4 +1,3 @@
-import React, { useState, useEffect, useCallback } from 'react';
 import {
   Card,
   Dice,
@@ -7,42 +6,13 @@ import {
   LoadingSpinner,
   Divider,
 } from './AppStyles';
+import useFetch from './Hooks/useFetch';
+import diceIcon from './Assets/icon-dice.svg';
 
-import diceIcon from './images/icon-dice.svg';
-
-const baseUrl = 'https://api.adviceslip.com/advice';
 
 function App() {
-  const [advice, setAdvice] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
-
-  const setData = (data) => {
-    setAdvice(data);
-    setIsLoading(false);
-  };
-
-  const grabErrors = (err) => {
-    setError(err);
-  };
-
-  const fetchData = useCallback(async () => {
-    setIsLoading(true);
-    const data = await fetch(baseUrl);
-    console.log(data);
-    if (!data.ok) {
-      return;
-    }
-    const json = await data.json();
-    console.log(json);
-    setData(json);
-  }, []);
-
-  useEffect(() => {
-    fetchData().catch((error) => {
-      grabErrors(error);
-    });
-  }, [fetchData]);
+  
+  const { advice, isLoading, error, fetchData } = useFetch();
 
   let content =
     isLoading || !advice ? (
