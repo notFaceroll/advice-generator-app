@@ -15,8 +15,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./src/design/desktop-screenshot.png)
-![](./src/design/mobile-screenshot.png)
+<!-- ![](./src/design/desktop-screenshot.png)
+![](./src/design/mobile-screenshot.png) -->
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/64233549/160908540-4e922e83-ebfa-445d-ad89-035bfec57e90.gif)
 
 
 ### Links
