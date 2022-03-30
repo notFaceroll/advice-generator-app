@@ -1,20 +1,6 @@
-# Frontend Mentor - Advice generator app solution
+# Advice generator app 🍀
 
-This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-
+This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). 
 
 ## Overview
 
@@ -41,10 +27,6 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Styled Components](https://styled-components.com/) - For styles
@@ -64,8 +46,4 @@ Again, a lot to work on and improve. Slow but steady. Learning and getting used 
 
 - [useFetch custom hook](https://dev.to/techcheck/custom-react-hook-usefetch-eid) - This article, written by Andrew on Dev.to, helped me understand the use of a custom hook for fetching data. Pretty simple and on point.
 
-
-## Author
-
-- Frontend Mentor - [@notFaceroll](https://www.frontendmentor.io/profile/notFaceroll)
 
